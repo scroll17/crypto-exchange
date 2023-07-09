@@ -18,6 +18,25 @@
 						"internalType": "address",
 						"name": "_user",
 						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "UserTransferedMoney",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
 					}
 				],
 				"name": "UserVoted",
@@ -37,19 +56,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "contractAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -92,6 +98,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -108,6 +127,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "transer",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -150,7 +195,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"main.sol": "Exchange"
+			"contracts/Exchange.sol": "Exchange"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -164,12 +209,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"main.sol": {
-			"keccak256": "0xa7b4aeef943966de1810850d118bb8c09cf04565d9990f70d895b332fc94b1dd",
+		"contracts/Exchange.sol": {
+			"keccak256": "0x082b20f56cfac4776671725cba20f164aa18943b4c3b0e571f282601a064bf11",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://654ae80371aee8f44fb4efdf2605eaa925d720e4b0dfa40c882e32716213f9aa",
-				"dweb:/ipfs/QmSwHHZ4C4ZZYwAwq6PhY9u87HdQqLofJv1Y18cwCsaHGM"
+				"bzz-raw://6c0b47b77b472ef45aa4186bb6ee9334fa8628cd639d691a534318c46fdaa905",
+				"dweb:/ipfs/Qmb8pvML9KGhqvwqfo9DvMfyL1t3gWMcocV9abzb7t9YCb"
 			]
 		}
 	},
